@@ -1,0 +1,13 @@
+# Default ignored files
+.DS_Store
+node_modules/
+__pycache__/
+*.py[cod]
+*.log
+
+# Python virtual environment
+.venv/
+
+# Local environment files
+.env
+.env.*
