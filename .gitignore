@@ -7,6 +7,7 @@ __pycache__/
 
 # Python virtual environment
 .venv/
+.venv*/
 
 # Local environment files
 .env
