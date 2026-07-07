@@ -2,7 +2,6 @@ import asyncio
 import semantic_kernel as sk
 
 from semantic_kernel.connectors.ai.open_ai import AzureChatCompletion, OpenAIChatCompletion
-from IPython.display import display, Markdown
 
 kernel = sk.Kernel()
 
@@ -46,6 +45,7 @@ thousand dollars a year, that will be a huge deal to him.
 
 async def main():
     summary_result = await kernel.run_async(summary_function, input_str=sk_input)
-    display(Markdown("### ✨ " + str(summary_result)))
+    print("\n=== Summary ===")
+    print(str(summary_result))
 
 asyncio.run(main())
